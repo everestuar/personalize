@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "streaming-events"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1dwd798w2wyt1"
+s3_prefix = "streaming-events"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "EventTrackerIdParam=\"13c99e36-dd43-44b9-ae27-2219143dfff2\" CampaignARNParam=\"arn:aws:personalize:us-east-1:856379576583:campaign/userPersonalizationCampaign\" S3BucketParam=\"personalize-workshop-inputbucket-1gdibqtm03jgy\" KinesisBatchSize=\"50\" ShardCount=\"1\""
